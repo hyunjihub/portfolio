@@ -1,0 +1,20 @@
+import type { Config } from 'tailwindcss';
+
+export default {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+        darkgray: '#3D3B40',
+        primary: '#5CB8E4',
+      },
+    },
+  },
+  plugins: [],
+} satisfies Config;

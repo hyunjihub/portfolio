@@ -1,0 +1,87 @@
+{
+  "projects": [
+    {
+      "projectId": 1,
+      "name": "용감한원정대",
+      "concept": "의뢰 해결을 컨셉으로 한 지역 커뮤니티 웹 사이트",
+      "github": "https://github.com/hyunjihub/BravePeople-Frontend",
+      "page": null,
+      "date": "2023.12.21 ~ 2024.03.03",
+      "isTeamProject": true,
+      "role": "Frontend 및 UI/UX 담당",
+      "description": "geolocation과 카카오 지도를 활용한 위치 정보를 기반으로 반경 내의 의뢰들을 표시하고, Websocket과 SSE를 통해 실시간 채팅을 제공하여 이웃 간 편리한 소통과 의뢰 해결을 지원하는 웹사이트",
+      "tech": ["react", "styled", "javascript", "redux", "reactrouter", "axios"]
+    },
+    {
+      "projectId": 2,
+      "name": "봄내음 (Bomnae-mmm)",
+      "concept": "강원도 춘천의 맛집과 카페를 소개하는 웹 사이트",
+      "github": "https://github.com/hyunjihub/bomnae_mmm",
+      "page": "https://bomnae-mmm.web.app/",
+      "date": "2024.04.12 ~ 2024.05.24",
+      "isTeamProject": false,
+      "role": null,
+      "description": "Firestore query로 맛집을 표시하고, Cloud Functions와 네이버 지도/검색 API를 통해 위치 정보와 블로그 검색 결과를 제공하여 맛집 정보를 한눈에 확인할 수 있고 후기를 남길 수 있는 웹사이트",
+      "tech": ["react", "styled", "javascript", "redux", "reactrouter", "firebase", "express", "figma"]
+    },
+    {
+      "projectId": 3,
+      "name": "올리브영 클론코딩",
+      "concept": "올리브영의 Landing page를 구현해본 클론코딩",
+      "github": "https://github.com/hyunjihub/Oliveyoung_Clone",
+      "page": "https://hyunjihub.github.io/Oliveyoung_Clone/",
+      "date": "2024.06.08 ~ 2024.06.13",
+      "isTeamProject": false,
+      "role": null,
+      "description": "React-slick을 이용하여 랜딩 페이지의 다양한 Carousel을 구현하고, 페이지네이션 등과 같이 실제 서비스되는 웹 서비스를 클론코딩을 통해 사용자 경험 UI/UX에 대해 학습할 수 있었던 프로젝트",
+      "tech": ["react", "tailwind", "javascript"]
+    },
+    {
+      "projectId": 4,
+      "name": "REACT_SHOP",
+      "concept": "Typescript를 활용하여 구현한 쇼핑몰 웹 사이트",
+      "github": "https://github.com/hyunjihub/react_shop",
+      "page": "https://react-shop-seven-sigma.vercel.app/",
+      "date": "2024.10.22 ~ 2024.11.05",
+      "isTeamProject": false,
+      "role": null,
+      "description": "TailwindCSS를 활용한 반응형 구현으로 다양한 디바이스에서 편리하게 접근할 수 있고, Recoil를 활용하여 장바구니, 테마 상태를 전역적으로 관리하도록 설계된 웹 사이트",
+      "tech": ["react", "tailwind", "typescript", "recoil", "reactrouter", "vercel", "vite"]
+    },
+    {
+      "projectId": 5,
+      "name": "별별스토어 (BYBL)",
+      "concept": "소품샵 통합 스토어를 컨셉으로한 웹 사이트",
+      "github": "https://github.com/hyunjihub/BYBLSTORE",
+      "page": "https://byblstore.vercel.app/",
+      "date": "2024.11.18 ~ 2024.12.12",
+      "isTeamProject": false,
+      "role": null,
+      "description": "카카오 로그인으로  간편하게 계정을 생성할 수 있고, Firestore를 활용해 소품샵 및 상품 데이터를 관리하여 전국의 다양한 소품샵들을 온라인에서 한 번에 구경하고 구매할 수 있는 웹 사이트",
+      "tech": ["nextjs", "tailwind", "typescript", "zustand", "axios", "reacthookform", "firebase", "vercel", "figma"]
+    },
+    {
+      "projectId": 6,
+      "name": "더취페이",
+      "concept": "자취생을 타겟으로한 공동구매 및 커뮤니티 웹 사이트",
+      "github": "https://github.com/hyunjihub/BYBLSTORE",
+      "page": "https://byblstore.vercel.app/",
+      "date": "2024.07.01 ~ 2025.01.19",
+      "isTeamProject": true,
+      "role": "PM, Frontend 및 UI/UX 담당",
+      "description": "geolocation과 네이버 Map을 활용하여 같은 지역 자취생들간 커뮤니티를 제공하고, 토스페이먼츠, 카카오페이 API 결제를 통해 일정 기간 동안 공동구매를 진행할 수 있는 웹 사이트",
+      "tech": [
+        "nextjs",
+        "tailwind",
+        "javascript",
+        "redux",
+        "axios",
+        "reacthookform",
+        "storybook",
+        "vercel",
+        "eslint",
+        "figma"
+      ]
+    }
+  ]
+}
