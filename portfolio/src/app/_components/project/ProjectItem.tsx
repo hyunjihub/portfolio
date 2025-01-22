@@ -4,6 +4,8 @@ import { IProject } from '@/app/data/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import arrow from '/public/project/arrow.svg';
+import github from '/public/link/github.svg';
+import link from '/public/project/link.svg';
 
 interface ProjectItemProps {
   project: IProject;
@@ -12,17 +14,32 @@ interface ProjectItemProps {
 export default function ProjectItem({ project }: ProjectItemProps) {
   return (
     <article className="w-[420px] h-[440px] p-7 rounded-lg border" title={`${project.name} 상세보기`}>
-      <div className="relative w-[360px] h-[170px] overflow-hidden">
+      <Link
+        className="inline-block relative w-[360px] h-[170px] overflow-hidden"
+        href={`/projects/${project.projectId}`}
+      >
         <Image
           className="object-cover object-top transform transition-transform duration-300 hover:scale-110"
           src={PROJECT_IMG[project.name as keyof typeof PROJECT_IMG]}
           alt={project.name}
           fill
         />
-      </div>
-      <h3 className="mt-3 text-primary text-3xl font-black tracking-tighter">{project.name}</h3>
-      <div>
+      </Link>
+      <Link className="mt-3 text-primary text-3xl font-black tracking-tighter" href={`/projects/${project.projectId}`}>
+        {project.name}
+      </Link>
+      <div className="flex justify-between">
         <p className="mt-1 text-darkgray text-sm tracking-tighter">{project.concept}</p>
+        <div className="flex items-center gap-3">
+          {project.page && (
+            <Link href={project.page} title={`${project.name} 바로가기`}>
+              <Image src={link} alt="page" width={20} height={12} />
+            </Link>
+          )}
+          <Link href={project.github} title="github 바로가기">
+            <Image src={github} alt="github" width={24} height={24} />
+          </Link>
+        </div>
       </div>
       <hr className="my-3 h-[1px] border-none bg-primary" />
       <p className="text-sm text-gray-400 font-light tracking-tighter">

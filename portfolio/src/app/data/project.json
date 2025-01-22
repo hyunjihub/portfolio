@@ -8,7 +8,7 @@
       "page": null,
       "date": "2023.12.21 ~ 2024.03.03",
       "isTeamProject": true,
-      "role": "Frontend 및 UI/UX 담당",
+      "role": "Frontend 담당",
       "description": "geolocation과 카카오 지도를 활용한 위치 정보를 기반으로 반경 내의 의뢰들을 표시하고, Websocket과 SSE를 통해 실시간 채팅을 제공하여 이웃 간 편리한 소통과 의뢰 해결을 지원하는 웹사이트",
       "tech": ["react", "styled", "javascript", "redux", "reactrouter", "axios"]
     },
@@ -64,11 +64,11 @@
       "projectId": 6,
       "name": "더취페이",
       "concept": "자취생을 타겟으로한 공동구매 및 커뮤니티 웹 사이트",
-      "github": "https://github.com/hyunjihub/BYBLSTORE",
-      "page": "https://byblstore.vercel.app/",
+      "github": "https://github.com/hyunjihub/DutchiePay-Front",
+      "page": "https://www.dutchie-pay.site/",
       "date": "2024.07.01 ~ 2025.01.19",
       "isTeamProject": true,
-      "role": "PM, Frontend 및 UI/UX 담당",
+      "role": "PM, Frontend 담당",
       "description": "geolocation과 네이버 Map을 활용하여 같은 지역 자취생들간 커뮤니티를 제공하고, 토스페이먼츠, 카카오페이 API 결제를 통해 일정 기간 동안 공동구매를 진행할 수 있는 웹 사이트",
       "tech": [
         "nextjs",
