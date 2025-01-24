@@ -24,7 +24,7 @@ export default function OliveYoung() {
   };
 
   return (
-    <ul className="mt-2 mb-24 text-center">
+    <ul className="mt-2 text-center">
       <li className="mt-3">
         <header
           className="w-[800px] flex justify-between items-center gap-10 text-lg font-semibold border px-6 py-3"
