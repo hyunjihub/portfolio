@@ -9,13 +9,16 @@ import figma from '/public/project/tech/figma.svg';
 import firebase from '/public/project/tech/firebase.svg';
 import javascript from '/public/project/tech/js.svg';
 import nextjs from '/public/project/tech/nextjs.svg';
+import notion from '/public/link/notion.svg';
 import oliveyoung from '/public/project/oliveyoung.png';
+import postman from '/public/project/tech/postman.svg';
 import react from '/public/project/tech/react.svg';
 import reacthookform from '/public/project/tech/reacthookform.svg';
 import recoil from '/public/project/tech/recoil.svg';
 import redux from '/public/project/tech/redux.svg';
 import router from '/public/project/tech/router.svg';
 import shop from '/public/project/shop.png';
+import slack from '/public/project/tech/slack.svg';
 import storybook from '/public/project/tech/storybook.svg';
 import styled from '/public/project/tech/styled.svg';
 import tailwind from '/public/project/tech/tailwind.svg';
@@ -53,4 +56,7 @@ export const TECH_STACK = {
   nextjs: nextjs,
   storybook: storybook,
   eslint: eslint,
+  notion: notion,
+  postman: postman,
+  slack: slack,
 };
