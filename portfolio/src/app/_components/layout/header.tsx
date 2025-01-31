@@ -2,12 +2,12 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <header className="bg-white sticky top-0 px-16 py-4 flex items-center justify-between shadow z-10">
+    <header className="bg-white sticky top-0 px-6 md:px-16 py-4 flex items-center justify-between shadow z-10">
       <Link href={'/'}>
         <h1 className="text-4xl font-bold">혅!</h1>
       </Link>
 
-      <ul className="w-80 flex justify-between text-darkgray text-lg">
+      <ul className="w-56 md:w-80 flex justify-between text-darkgray text-base md:text-lg">
         <li>
           <Link href={'/'} className="hover:font-semibold">
             ABOUT

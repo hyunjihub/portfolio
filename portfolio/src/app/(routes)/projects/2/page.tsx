@@ -9,27 +9,27 @@ export default function BomnaeDetail() {
   return (
     <main className="min-h-screen flex flex-col justify-center items-center">
       <h2 className="mt-24 text-4xl text-primary font-black">봄내음 (Bomnae-mmm)</h2>
-      <p className="mt-2 text-center text-sm">
+      <p className="mt-2 text-center px-3 text-xs md:text-sm">
         봄내음은 춘천을 의미하는 ‘봄내’와 맛있는 음식을 먹을 때 자주 사용하는 감탄사 ‘음~’을 합친 이름으로
         <br /> 춘천의 맛집, 카페, 놀거리 정보를 제공해주는 웹 사이트입니다.
       </p>
       <div className="flex gap-5">
         <Link
-          className="px-2 py-1 border border-darkgray text-sm mt-6 flex gap-2 hover:underline"
+          className="px-2 py-1 border border-darkgray text-xs md:text-sm mt-6 flex gap-2 hover:underline"
           href={'https://bomnae-mmm.web.app/'}
         >
           페이지 바로가기
           <Image src={arrow} alt="link" width={8} height={8} />
         </Link>
         <Link
-          className="px-2 py-1 border border-darkgray text-sm mt-6 flex gap-2 hover:underline"
+          className="px-2 py-1 border border-darkgray text-xs md:text-sm mt-6 flex gap-2 hover:underline"
           href={'https://github.com/hyunjihub/bomnae_mmm'}
         >
           Github 바로가기
           <Image src={arrow} alt="link" width={8} height={8} />
         </Link>
         <Link
-          className="px-2 py-1 border border-darkgray text-sm mt-6 flex gap-2 hover:underline"
+          className="px-2 py-1 border border-darkgray text-xs md:text-sm mt-6 flex gap-2 hover:underline"
           href={
             'https://tall-bestseller-c51.notion.site/d613c25daa274ac4901d204ef09eae34?v=8c1d18231dab4bc39329ab9a81da72a2&pvs=4'
           }
@@ -52,13 +52,13 @@ export default function BomnaeDetail() {
         })}
       </div>
       <p className="mt-6 font-bold text-primary">메뉴 구조도</p>
-      <div className="relative w-[1020px] h-[450px]">
-        <Image className="object-cover" src={IA} alt="menutree" fill />
+      <div className="relative w-[400px] md:w-[1020px] h-[200px] md:h-[450px]">
+        <Image className="object-contain md:object-cover" src={IA} alt="menutree" fill />
       </div>
       <p className="mt-6 font-bold text-primary">직접 구현한 기능</p>
       <Bomnaemmm />
       <p className="mt-6 font-bold text-primary">프로젝트로 배운점</p>
-      <p className="max-w-[800px] mt-2 text-darkgray mb-24">
+      <p className="max-w-[400px] md:max-w-[800px] px-3 mt-2 text-sm md:text-base text-darkgray mb-24">
         1. <strong>Firestore</strong>의 쿼리 기능을 활용한 필터링 기능으로 사용자가 실시간으로 데이터를 필터링할 수 있는
         편의성에 대해 인지하게 되었습니다. 또한, <strong>멀티 필터</strong>의 추가로 보다 사용자가 편리하게 접근할 수
         있는 방법에 대해 고민하게 되었습니다.

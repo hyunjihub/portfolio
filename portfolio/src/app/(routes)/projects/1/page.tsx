@@ -9,7 +9,7 @@ export default function BraveDetail() {
   return (
     <main className="min-h-screen flex flex-col justify-center items-center">
       <h2 className="mt-24 text-4xl text-primary font-black">용감한 원정대</h2>
-      <p className="mt-2 text-center text-sm">
+      <p className="mt-2 text-center px-3 text-xs md:text-sm">
         무서운 벌레를 대신 잡아줄 사람이 없을 때! 전화공포증이 심해 전화를 하기 겁날 때! 무서워서 환불하지 못하고 있을
         때!
         <br />
@@ -19,7 +19,7 @@ export default function BraveDetail() {
         간편하게 게시글을 올림으로써 누군가에게 원정대가 되어줄 수도 있고, 누군가에게 원정을 요청할 수도 있습니다.
       </p>
       <Link
-        className="px-2 py-1 border border-darkgray text-sm mt-6 flex gap-2 hover:underline"
+        className="px-2 py-1 border border-darkgray text-xs md:text-sm mt-6 flex gap-2 hover:underline"
         href={'https://github.com/hyunjihub/BravePeople-Frontend'}
       >
         Github 바로가기
@@ -40,8 +40,8 @@ export default function BraveDetail() {
         )}
       </div>
       <p className="mt-6 font-bold text-primary">메뉴 구조도</p>
-      <div className="relative w-[1020px] h-[450px]">
-        <Image className="object-cover" src={menutree} alt="menutree" fill />
+      <div className="relative w-[400px] md:w-[1020px] h-[200px] md:h-[450px]">
+        <Image className="object-contain md:object-cover" src={menutree} alt="menutree" fill />
       </div>
       <p className="mt-6 font-bold text-primary">직접 구현한 기능</p>
       <Brave />

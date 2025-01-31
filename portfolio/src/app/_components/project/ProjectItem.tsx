@@ -13,9 +13,12 @@ interface ProjectItemProps {
 
 export default function ProjectItem({ project }: ProjectItemProps) {
   return (
-    <article className="w-[420px] h-[440px] p-7 rounded-lg border" title={`${project.name} 상세보기`}>
+    <article
+      className="w-[360px] md:w-[640px] lg:w-[420px] h-[400px] md:h-[440px] px-7 py-5 lg:py-7 rounded-lg border"
+      title={`${project.name} 상세보기`}
+    >
       <Link
-        className="inline-block relative w-[360px] h-[170px] overflow-hidden"
+        className="inline-block relative w-full h-[160px] md:h-[200px] lg:h-[170px] overflow-hidden"
         href={`/projects/${project.projectId}`}
       >
         <Image
@@ -28,7 +31,7 @@ export default function ProjectItem({ project }: ProjectItemProps) {
       <Link className="mt-3 text-primary text-3xl font-black tracking-tighter" href={`/projects/${project.projectId}`}>
         {project.name}
       </Link>
-      <div className="flex justify-between">
+      <div className="hidden md:flex justify-between">
         <p className="mt-1 text-darkgray text-sm tracking-tighter">{project.concept}</p>
         <div className="flex items-center gap-3">
           {project.page && (
@@ -47,16 +50,16 @@ export default function ProjectItem({ project }: ProjectItemProps) {
         {project.isTeamProject ? `(팀 프로젝트${project.role ? `, ${project.role}` : ''})` : '(개인 프로젝트)'}
       </p>
 
-      <p className="mt-2 text-sm text-darkgray leading-tight">{project.description}</p>
+      <p className="mt-2 text-xs md:text-sm text-darkgray leading-tight">{project.description}</p>
       <div className="mt-4 flex justify-between">
-        <div className="flex gap-1.5">
+        <div className="flex gap-1 md:gap-1.5">
           {project.tech.map((tech, key) => {
             return (
               <Image src={TECH_STACK[tech as keyof typeof TECH_STACK]} alt={tech} width={20} height={20} key={key} />
             );
           })}
         </div>
-        <Link className="flex items-center gap-2 text-primary" href={`/projects/${project.projectId}`}>
+        <Link className="flex items-center gap-2 text-primary hover:underline" href={`/projects/${project.projectId}`}>
           more
           <Image src={arrow} alt="link" width={7} height={12} />
         </Link>
