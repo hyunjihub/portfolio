@@ -1,15 +1,15 @@
 'use client';
 
 import Image from 'next/image';
-import cart from '/public/project/BYBL/cart.gif';
-import like from '/public/project/BYBL/like.gif';
-import list from '/public/project/BYBL/list.gif';
+import cart from '/public/project/bybl/cart.gif';
+import like from '/public/project/bybl/like.gif';
+import list from '/public/project/bybl/list.gif';
 import more from '/public/project/more.svg';
-import order from '/public/project/BYBL/order.gif';
-import product from '/public/project/BYBL/product.gif';
-import search from '/public/project/BYBL/search.gif';
-import signup from '/public/project/BYBL/signup.gif';
-import store from '/public/project/BYBL/store.gif';
+import order from '/public/project/bybl/order.gif';
+import product from '/public/project/bybl/product.gif';
+import search from '/public/project/bybl/search.gif';
+import signup from '/public/project/bybl/signup.gif';
+import store from '/public/project/bybl/store.gif';
 import { useState } from 'react';
 
 export default function BYBL() {
