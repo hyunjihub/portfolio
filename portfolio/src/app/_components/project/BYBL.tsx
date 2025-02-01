@@ -102,7 +102,7 @@ export default function BYBL() {
           <div className="flex justify-center items-center gap-10 text-lg font-semibold">
             <div className="flex gap-10 items-center">
               <div className="flex gap-3"></div>
-              <Image className={`${openIndexes[2] ? '' : 'rotate-180'}`} src={more} alt="more" width={20} height={20} />
+              <Image className={`${openIndexes[3] ? '' : 'rotate-180'}`} src={more} alt="more" width={20} height={20} />
             </div>
           </div>
         </header>

@@ -136,7 +136,7 @@ export default function OliveYoung() {
                   <Image src={velog} alt="velog" width={20} height={20} />
                 </Link>
               </div>
-              <Image className={`${openIndexes[2] ? '' : 'rotate-180'}`} src={more} alt="more" width={20} height={20} />
+              <Image className={`${openIndexes[3] ? '' : 'rotate-180'}`} src={more} alt="more" width={20} height={20} />
             </div>
           </div>
         </header>
