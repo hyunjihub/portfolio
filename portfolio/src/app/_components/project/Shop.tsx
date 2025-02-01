@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import cart from '/public/project/shop/cart.gif';
 import more from '/public/project/more.svg';
 import product from '/public/project/shop/product.gif';
@@ -8,6 +9,7 @@ import responsive from '/public/project/shop/responsive.gif';
 import search from '/public/project/shop/search.gif';
 import theme from '/public/project/shop/theme.gif';
 import { useState } from 'react';
+import velog from '/public/link/velog.svg';
 
 export default function Shop() {
   const [openIndexes, setOpenIndexes] = useState(Array(6).fill(false));
@@ -51,7 +53,15 @@ export default function Shop() {
           화이트/다크 테마
           <div className="flex justify-center items-center gap-10 text-base md:text-lg font-semibold">
             <div className="flex gap-10 items-center">
-              <div className="hidden md:flex gap-3"></div>
+              <div className="hidden md:flex gap-3">
+                <Link
+                  href={
+                    'https://velog.io/@syub98774/CSS-tailwindCSS%EB%A1%9C-%EB%8B%A4%ED%81%AC%ED%99%94%EC%9D%B4%ED%8A%B8-%ED%85%8C%EB%A7%88-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0'
+                  }
+                >
+                  <Image src={velog} alt="velog" width={20} height={20} />
+                </Link>
+              </div>
             </div>
             <Image className={`${openIndexes[1] ? '' : 'rotate-180'}`} src={more} alt="more" width={20} height={20} />
           </div>
@@ -122,7 +132,15 @@ export default function Shop() {
           상품 검색
           <div className="flex justify-center items-center gap-10 text-base md:text-lg font-semibold">
             <div className="flex gap-10 items-center">
-              <div className="hidden md:flex gap-3"></div>
+              <div className="hidden md:flex gap-3">
+                <Link
+                  href={
+                    'https://velog.io/@syub98774/%EB%B6%84%EB%AA%85-%ED%81%B4%EB%A6%AD%ED%96%88%EB%8A%94%EB%8D%B0-%ED%81%B4%EB%A6%AD-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EA%B0%80-%EC%8B%A4%ED%96%89%EB%90%98%EC%A7%80-%EC%95%8A%EB%8A%94%EB%8B%A4.-onClick-onMouseDown'
+                  }
+                >
+                  <Image src={velog} alt="velog" width={20} height={20} />
+                </Link>
+              </div>
               <Image className={`${openIndexes[4] ? '' : 'rotate-180'}`} src={more} alt="more" width={20} height={20} />
             </div>
           </div>

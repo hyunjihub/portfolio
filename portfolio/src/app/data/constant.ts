@@ -2,21 +2,29 @@ import axios from '/public/project/tech/axios.svg';
 import bomnaemmm from '/public/project/bomnaemmm.png';
 import brave from '/public/project/brave.png';
 import bybl from '/public/project/bybl.png';
+import c from '/public/project/tech/c.svg';
+import cloudfront from '/public/project/tech/cloudfront.svg';
+import css from '/public/project/tech/css.svg';
 import dutchie from '/public/project/dutchie.png';
 import eslint from '/public/project/tech/eslint.svg';
 import express from '/public/project/tech/express.svg';
 import figma from '/public/project/tech/figma.svg';
 import firebase from '/public/project/tech/firebase.svg';
+import github from '/public/link/github.svg';
+import html from '/public/project/tech/html.svg';
+import java from '/public/project/tech/java.svg';
 import javascript from '/public/project/tech/js.svg';
 import nextjs from '/public/project/tech/nextjs.svg';
 import notion from '/public/link/notion.svg';
 import oliveyoung from '/public/project/oliveyoung.png';
 import postman from '/public/project/tech/postman.svg';
+import python from '/public/project/tech/python.svg';
 import react from '/public/project/tech/react.svg';
 import reacthookform from '/public/project/tech/reacthookform.svg';
 import recoil from '/public/project/tech/recoil.svg';
 import redux from '/public/project/tech/redux.svg';
 import router from '/public/project/tech/router.svg';
+import s3 from '/public/project/tech/s3.svg';
 import shop from '/public/project/shop.png';
 import slack from '/public/project/tech/slack.svg';
 import storybook from '/public/project/tech/storybook.svg';
@@ -59,4 +67,12 @@ export const TECH_STACK = {
   notion: notion,
   postman: postman,
   slack: slack,
+  java: java,
+  c: c,
+  python: python,
+  github: github,
+  s3: s3,
+  cloudfront: cloudfront,
+  css: css,
+  html: html,
 };

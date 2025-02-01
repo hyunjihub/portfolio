@@ -1,0 +1,166 @@
+{
+  "language": [
+    {
+      "skillId": 1,
+      "name": "javascript",
+      "projects": [1, 2, 3, 6],
+      "isCommon": true
+    },
+    {
+      "skillId": 2,
+      "name": "typescript",
+      "projects": [4, 5],
+      "isCommon": true
+    },
+    {
+      "skillId": 3,
+      "name": "java",
+      "projects": [],
+      "isCommon": false
+    },
+    {
+      "skillId": 4,
+      "name": "c",
+      "projects": [],
+      "isCommon": false
+    },
+    {
+      "skillId": 5,
+      "name": "python",
+      "projects": [],
+      "isCommon": false
+    }
+  ],
+  "devops": [
+    {
+      "skillId": 6,
+      "name": "github",
+      "projects": [1, 2, 3, 4, 5, 6],
+      "isCommon": true
+    },
+    {
+      "skillId": 7,
+      "name": "s3",
+      "projects": [1, 6],
+      "isCommon": true
+    },
+    {
+      "skillId": 8,
+      "name": "cloudfront",
+      "projects": [],
+      "isCommon": true
+    },
+    {
+      "skillId": 9,
+      "name": "vercel",
+      "projects": [4, 5, 6],
+      "isCommon": true
+    },
+    {
+      "skillId": 10,
+      "name": "vite",
+      "projects": [4],
+      "isCommon": true
+    },
+    {
+      "skillId": 11,
+      "name": "eslint",
+      "projects": [4, 5, 6],
+      "isCommon": true
+    }
+  ],
+  "backend": [
+    {
+      "skillId": 12,
+      "name": "firebase",
+      "projects": [2, 5],
+      "isCommon": true
+    }
+  ],
+  "frontend": [
+    {
+      "skillId": 13,
+      "name": "nextjs",
+      "projects": [5, 6],
+      "isCommon": true
+    },
+    {
+      "skillId": 14,
+      "name": "react",
+      "projects": [1, 2, 3, 4, 5, 6],
+      "isCommon": true
+    },
+    {
+      "skillId": 15,
+      "name": "html",
+      "projects": [],
+      "isCommon": true
+    },
+    {
+      "skillId": 16,
+      "name": "css",
+      "projects": [],
+      "isCommon": true
+    },
+    {
+      "skillId": 16,
+      "name": "styled",
+      "projects": [1, 2],
+      "isCommon": true
+    },
+    {
+      "skillId": 17,
+      "name": "tailwind",
+      "projects": [3, 4, 5, 6],
+      "isCommon": true
+    },
+    {
+      "skillId": 18,
+      "name": "redux",
+      "projects": [1, 2, 6],
+      "isCommon": true
+    },
+    {
+      "skillId": 19,
+      "name": "reactrouter",
+      "projects": [1, 2, 4],
+      "isCommon": true
+    },
+    {
+      "skillId": 20,
+      "name": "axios",
+      "projects": [1, 4, 5, 6],
+      "isCommon": true
+    },
+    {
+      "skillId": 21,
+      "name": "reacthookform",
+      "projects": [5, 6],
+      "isCommon": true
+    },
+    {
+      "skillId": 22,
+      "name": "figma",
+      "projects": [2, 5, 6],
+      "isCommon": true
+    },
+    {
+      "skillId": 23,
+      "name": "recoil",
+      "projects": [4],
+      "isCommon": false
+    },
+    {
+      "skillId": 24,
+      "name": "zustand",
+      "projects": [5],
+      "isCommon": false
+    },
+    {
+      "skillId": 25,
+      "name": "storybook",
+      "projects": [6],
+      "isCommon": false
+    }
+  ]
+}
