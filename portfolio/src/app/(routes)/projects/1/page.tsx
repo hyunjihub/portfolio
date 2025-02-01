@@ -40,8 +40,8 @@ export default function BraveDetail() {
         )}
       </div>
       <p className="mt-6 font-bold text-primary">메뉴 구조도</p>
-      <div className="relative w-[400px] md:w-[1020px] h-[200px] md:h-[450px]">
-        <Image className="object-contain md:object-cover" src={menutree} alt="menutree" fill />
+      <div className="relative w-[370px] md:w-[760px] lg:w-[1020px] h-[200px] md:h-[450px]">
+        <Image className="object-contain lg:object-cover" src={menutree} alt="menutree" fill />
       </div>
       <p className="mt-6 font-bold text-primary">직접 구현한 기능</p>
       <Brave />

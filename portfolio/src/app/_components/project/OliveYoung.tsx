@@ -27,7 +27,7 @@ export default function OliveYoung() {
     <ul className="mt-2 text-center">
       <li className="mt-3">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(0)}
         >
           Header 구현
@@ -45,7 +45,7 @@ export default function OliveYoung() {
           </div>
         </header>
         {openIndexes[0] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={header} alt="header" width={0} height={0} />
             화면 렌더링 시 일정 시간 동안 오늘드림으로 설정된 주소가 표시되며, 이후 hover하면 해당 주소가 나타납니다.
             <br />
@@ -58,9 +58,9 @@ export default function OliveYoung() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(1)}
         >
           메인 슬라이드
@@ -80,7 +80,7 @@ export default function OliveYoung() {
           </div>
         </header>
         {openIndexes[1] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={mainSlide} alt="mainSlide" width={0} height={0} />
             react-slick을 통해 Main Carousel을 구현하였으며 Carousel 좌측에 카테고리를 배치했습니다.
             <br />
@@ -90,9 +90,9 @@ export default function OliveYoung() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(2)}
         >
           주목 / 추천 상품
@@ -112,16 +112,16 @@ export default function OliveYoung() {
           </div>
         </header>
         {openIndexes[2] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={recommend} alt="recommend" width={0} height={0} />
             다른 상품 추천 버튼을 통해 주목과 추천 Slider를 개별로 전환시킬 수 있습니다.
           </div>
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(3)}
         >
           인기 행사 / 올리브영 단독
@@ -141,7 +141,7 @@ export default function OliveYoung() {
           </div>
         </header>
         {openIndexes[3] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={hot} alt="hot" width={0} height={0} />
             next와 prev 버튼을 custom 하여 동작시켰으며, drag를 이용해 전환시킬 수 있습니다. <br /> paging을 custom 하여
             원하는 slide로 이동 가능하도록 하였습니다.
@@ -149,9 +149,9 @@ export default function OliveYoung() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(4)}
         >
           주목 브랜드
@@ -171,7 +171,7 @@ export default function OliveYoung() {
           </div>
         </header>
         {openIndexes[4] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={brand} alt="brand" width={0} height={0} />
             next와 prev 버튼을 custom 하여 동작시켰으며, drag를 이용해 전환시킬 수 있습니다. <br /> paging을 custom 하여
             브랜드 이름 클릭 시 원하는 slide로 이동 가능하도록 하였습니다.
@@ -179,9 +179,9 @@ export default function OliveYoung() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(5)}
         >
           조회 급상승, 인기템
@@ -201,7 +201,7 @@ export default function OliveYoung() {
           </div>
         </header>
         {openIndexes[5] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={top10} alt="top10" width={0} height={0} />
             1위부터 10까지의 상품을 클릭 없이 자동으로 확인할 수 있습니다.
             <br /> 일정 시간 이후 자동으로 다음 순위를 표시하며, 5위/10위 이후 다음 slide로 자동 전환되도록

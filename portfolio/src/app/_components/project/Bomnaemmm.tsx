@@ -35,7 +35,7 @@ export default function Bomnaemmm() {
     <ul className="mt-2 text-center">
       <li className="mt-3">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(0)}
         >
           회원가입 / 회원탈퇴
@@ -60,7 +60,7 @@ export default function Bomnaemmm() {
           </div>
         </header>
         {openIndexes[0] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={signup} alt="signup" width={0} height={0} />
             회원가입시 이메일, 비밀번호 형식 검사와 닉네임 중복 검사를 거친 뒤, 회원가입을 진행하도록 구현했습니다.
             <br />
@@ -72,9 +72,9 @@ export default function Bomnaemmm() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(1)}
         >
           로그인/로그아웃
@@ -94,7 +94,7 @@ export default function Bomnaemmm() {
           </div>
         </header>
         {openIndexes[1] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={login} alt="login" width={0} height={0} />
             로그인 시 users Collection에서 email field가 동일한 document를 반환하도록 하여 Redux에 유저 정보가
             저장되도록 하였습니다.
@@ -110,9 +110,9 @@ export default function Bomnaemmm() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(2)}
         >
           프로필 변경
@@ -132,7 +132,7 @@ export default function Bomnaemmm() {
           </div>
         </header>
         {openIndexes[2] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={profile} alt="profile" width={0} height={0} />
             이미지 업로드 시 Firebase의 Storage에 저장한 후, 반환된 URL을 이용하여 이미지를 렌더링하도록 구현했습니다.
             <br />
@@ -142,9 +142,9 @@ export default function Bomnaemmm() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(3)}
         >
           비밀번호 찾기 / 재설정
@@ -164,7 +164,7 @@ export default function Bomnaemmm() {
           </div>
         </header>
         {openIndexes[3] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={find} alt="find" width={0} height={0} />
             회원은 입력받은 Password을 reauthenticateWithCredential을 이용하여 사용자를 재인증한 뒤 비밀번호 재설정을
             하도록 설계하였습니다.
@@ -175,9 +175,9 @@ export default function Bomnaemmm() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(4)}
         >
           무한스크롤을 이용한 맛집 조회
@@ -204,7 +204,7 @@ export default function Bomnaemmm() {
           </div>
         </header>
         {openIndexes[4] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={scroll} alt="scroll" width={0} height={0} />
             Firestore에 맛집 데이터를 저장해주었습니다. 음식점의 경우 place_id를 1000번, 카페의 경우 place_id를
             2000번대로 저장하였습니다. <br />
@@ -218,9 +218,9 @@ export default function Bomnaemmm() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(5)}
         >
           나만의 맛집 좋아요(저장)
@@ -240,7 +240,7 @@ export default function Bomnaemmm() {
           </div>
         </header>
         {openIndexes[5] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={like} alt="like" width={0} height={0} />
             Firestore의 Likes Collection에 uid와 일치하는 문서를 읽어와 좋아요한 장소의 place_id 배열을 저장하여
             restaurants Collection에서 place_id와 일치하는 데이터에 좋아요 표시가 되도록 구현했습니다.
@@ -248,9 +248,9 @@ export default function Bomnaemmm() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(6)}
         >
           맛집 후기 등록 및 조회
@@ -270,7 +270,7 @@ export default function Bomnaemmm() {
           </div>
         </header>
         {openIndexes[6] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={review} alt="review" width={0} height={0} />
             Firestore의 reviews Collection에 후기 데이터를 저장하여 등록하도록 설계하였습니다. <br />
             uid field 값이 사용자 uid와 일치할 경우 삭제 버튼을 활성화하여 사용자 본인만 후기를 삭제할 수 있도록
@@ -281,9 +281,9 @@ export default function Bomnaemmm() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(7)}
         >
           네이버 지도와 블로그 검색 결과
@@ -303,7 +303,7 @@ export default function Bomnaemmm() {
           </div>
         </header>
         {openIndexes[7] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={navermap} alt="navermap" width={0} height={0} />
             데이터에 저장된 주소를 네이버 geocode을 통해 좌표로 변환한 뒤, 네이버 MAP API에 해당 값을 전달하여 해당
             위치를 마커와 함께 표시하였습니다.
@@ -315,9 +315,9 @@ export default function Bomnaemmm() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(8)}
         >
           상호명, 메뉴로 맛집 검색
@@ -337,16 +337,16 @@ export default function Bomnaemmm() {
           </div>
         </header>
         {openIndexes[8] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={search} alt="search" width={0} height={0} />
             restaurants Collection에서 search 필드를 검색하여 일치하는 데이터를 출력하도록 하였습니다.
           </div>
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(9)}
         >
           나만의 맛집 등록 요청 및 관리자 계정
@@ -358,7 +358,7 @@ export default function Bomnaemmm() {
           </div>
         </header>
         {openIndexes[9] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={request} alt="request" width={0} height={0} />
             요청 데이터를 Firestore의 requests Collection에 저장하여 사용자의 추천 맛집 등록을 요청할 수 있도록
             구현하였습니다. <br />
@@ -372,9 +372,9 @@ export default function Bomnaemmm() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(10)}
         >
           기타 UI/UX
@@ -415,7 +415,7 @@ export default function Bomnaemmm() {
           </div>
         </header>
         {openIndexes[10] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             3분기 반응형 UI를 설계하여 다양한 디바이스에서 접근 시에도 편리하게 사용할 수 있도록 설계하였습니다. <br />
             Embla Carousel을 활용하여 랜딩 페이지를 구현하였습니다. <br />
             사용자 테스트를 통해 사용자가 불편함을 느끼거나 동작 방식이 모호한 기능들을 직관적으로 수정하였습니다.

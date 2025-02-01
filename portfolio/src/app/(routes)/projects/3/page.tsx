@@ -44,7 +44,7 @@ export default function OliveYoungDetail() {
       <p className="mt-6 font-bold text-primary">직접 구현한 기능</p>
       <OliveYoung />
       <p className="mt-6 font-bold text-primary">프로젝트로 배운점</p>
-      <p className="max-w-[400px] md:max-w-[800px] px-3 mt-2 text-sm md:text-base text-darkgray mb-24">
+      <p className="max-w-[400px] md:max-w-[760px] lg:max-w-[800px] px-3 mt-2 text-sm md:text-base text-darkgray mb-24">
         1. <strong>TailwindCSS</strong>를 활용하여 유틸리티 클래스 기반의 스타일링을 구현하였습니다. 이를 통해 빠르게
         스타일을 적용하고 일관성 있는 디자인을 유지하였습니다.
         <br />

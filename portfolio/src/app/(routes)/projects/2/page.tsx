@@ -52,13 +52,13 @@ export default function BomnaeDetail() {
         })}
       </div>
       <p className="mt-6 font-bold text-primary">메뉴 구조도</p>
-      <div className="relative w-[400px] md:w-[1020px] h-[200px] md:h-[450px]">
-        <Image className="object-contain md:object-cover" src={IA} alt="menutree" fill />
+      <div className="relative w-[370px] md:w-[760px] lg:w-[1020px] h-[200px] md:h-[450px]">
+        <Image className="object-contain lg:object-cover" src={IA} alt="menutree" fill />
       </div>
       <p className="mt-6 font-bold text-primary">직접 구현한 기능</p>
       <Bomnaemmm />
       <p className="mt-6 font-bold text-primary">프로젝트로 배운점</p>
-      <p className="max-w-[400px] md:max-w-[800px] px-3 mt-2 text-sm md:text-base text-darkgray mb-24">
+      <p className="max-w-[400px] md:max-w-[760px] lg:max-w-[800px] px-3 mt-2 text-sm md:text-base text-darkgray mb-24">
         1. <strong>Firestore</strong>의 쿼리 기능을 활용한 필터링 기능으로 사용자가 실시간으로 데이터를 필터링할 수 있는
         편의성에 대해 인지하게 되었습니다. 또한, <strong>멀티 필터</strong>의 추가로 보다 사용자가 편리하게 접근할 수
         있는 방법에 대해 고민하게 되었습니다.

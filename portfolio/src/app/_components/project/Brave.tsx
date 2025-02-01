@@ -31,7 +31,7 @@ export default function Brave() {
     <ul className="mt-2 mb-24 text-center">
       <li className="mt-3">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(0)}
         >
           모든 페이지 UI/UX 및 CSS
@@ -70,7 +70,7 @@ export default function Brave() {
           </div>
         </header>
         {openIndexes[0] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             Photoshop을 이용하여 화면(UI/UX)을 설계했습니다.
             <br />
             Styled Components의 컴포넌트 기반 스타일링을 통해 UI와 로직을 분리하지 않고 유지보수가 용이하도록
@@ -84,9 +84,9 @@ export default function Brave() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(1)}
         >
           로그인
@@ -106,7 +106,7 @@ export default function Brave() {
           </div>
         </header>
         {openIndexes[1] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={login} alt="login" width={0} height={0} />
             JWT 토큰을 사용하여 사용자를 식별하였으며, 유저 정보와 토큰을 Redux(Session Storage)를 통해 관리하였습니다.
             <br />
@@ -117,9 +117,9 @@ export default function Brave() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(2)}
         >
           회원가입
@@ -139,7 +139,7 @@ export default function Brave() {
           </div>
         </header>
         {openIndexes[2] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={signup} alt="signup" width={0} height={0} />
             정규표현식을 통해 유효성 검사를 진행하여 필드 규칙에 맞지 않는 값들이 서버로 전송되지 않도록 설계했습니다.
             <br />
@@ -149,9 +149,9 @@ export default function Brave() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(3)}
         >
           계정 찾기 및 비밀번호 재설정
@@ -161,7 +161,7 @@ export default function Brave() {
           <Image className={`${openIndexes[3] ? '' : 'rotate-180'}`} src={more} alt="more" width={20} height={20} />
         </header>
         {openIndexes[3] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={find} alt="find" width={0} height={0} />
             아이디 찾기 시, 가입된 이메일 주소를 통해 아이디의 일부를 반환하도록 구현하였습니다.
             <br />
@@ -177,9 +177,9 @@ export default function Brave() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(4)}
         >
           프로필 페이지
@@ -199,7 +199,7 @@ export default function Brave() {
           </div>
         </header>
         {openIndexes[4] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={profile} alt="profile" width={0} height={0} />
             프로필 모드와 수정 모드를 구분하여 수정 모드 설정 시 닉네임, 자기소개 문구와 프로필 이미지를 변경할 수
             있도록 설계했습니다.
@@ -210,9 +210,9 @@ export default function Brave() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(5)}
         >
           이미지 업로드 구현 및 확대 모달
@@ -232,7 +232,7 @@ export default function Brave() {
           </div>
         </header>
         {openIndexes[5] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={img} alt="img" width={0} height={0} />
             REST API를 통해 이미지 파일 업로드 시 S3에 이미지가 저장되도록 설계하였습니다.
             <br />
@@ -242,9 +242,9 @@ export default function Brave() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(6)}
         >
           게시글
@@ -264,7 +264,7 @@ export default function Brave() {
           </div>
         </header>
         {openIndexes[6] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={post} alt="post" width={0} height={0} />
             게시글 내 필터링 기능을 통해 사용자가 원하는 반경 내의 게시글만 표시되도록 구현하였습니다.
             <br />
@@ -276,9 +276,9 @@ export default function Brave() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(7)}
         >
           후기 및 별점
@@ -298,7 +298,7 @@ export default function Brave() {
           </div>
         </header>
         {openIndexes[7] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={review} alt="review" width={0} height={0} />
             의뢰를 완료할 때 후기 모달이 표시되어 후기를 작성할 수 있게 설계했습니다.
             <br />
@@ -307,9 +307,9 @@ export default function Brave() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(8)}
         >
           채팅
@@ -336,7 +336,7 @@ export default function Brave() {
           </div>
         </header>
         {openIndexes[8] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={chat} alt="chat" width={0} height={0} />
             Websocket과 STOMP를 이용하여 채팅을 송수신할 수 있도록 구현하였습니다.
             <br />
@@ -352,9 +352,9 @@ export default function Brave() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(9)}
         >
           알림
@@ -381,7 +381,7 @@ export default function Brave() {
           </div>
         </header>
         {openIndexes[9] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={notice} alt="notice" width={0} height={0} />
             SSE를 통해 채팅 방에 입장하지 않은 경우에도 서버로부터 데이터를 전송받아 실시간으로 알림을 표시할 수 있게
             설계하였습니다.

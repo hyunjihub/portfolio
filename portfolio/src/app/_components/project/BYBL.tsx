@@ -27,7 +27,7 @@ export default function BYBL() {
     <ul className="mt-2 text-center">
       <li className="mt-3">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(0)}
         >
           회원가입 및 카카오 소셜 로그인
@@ -37,7 +37,7 @@ export default function BYBL() {
           </div>
         </header>
         {openIndexes[0] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={signup} alt="signup" width={0} height={0} />
             회원가입시 React Hook Form을 활용하여 이메일, 비밀번호 형식 검사를 거친 뒤, 회원가입을 진행하도록
             구현했습니다.
@@ -47,9 +47,9 @@ export default function BYBL() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(1)}
         >
           스토어 목록 및 판매 상품 목록
@@ -61,7 +61,7 @@ export default function BYBL() {
           </div>
         </header>
         {openIndexes[1] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={list} alt="list" width={0} height={0} />
             IntersectionObserver을 이용하여 무한스크롤을 구현하였으며, Firestore의 query를 활용하여 스토어와 판매 상품이
             선택한 필터링 순으로 제공되도록 하였습니다.
@@ -69,9 +69,9 @@ export default function BYBL() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(2)}
         >
           스토어 정보 및 팔로우
@@ -83,7 +83,7 @@ export default function BYBL() {
           </div>
         </header>
         {openIndexes[2] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={store} alt="store" width={0} height={0} />
             스토어의 정보와 스토어 Id를 통해 해당 스토어가 판매하고 있는 상품들을 한 눈에 확인 가능하도록
             구현하였습니다.
@@ -93,9 +93,9 @@ export default function BYBL() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(3)}
         >
           상품 정보 및 옵션 선택
@@ -107,7 +107,7 @@ export default function BYBL() {
           </div>
         </header>
         {openIndexes[3] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={product} alt="product" width={0} height={0} />
             상품 페이지에서 옵션과 수량 선택 시, 실시간으로 총 금액을 계산하여 표시하도록 구현하였습니다.
             <br />
@@ -117,9 +117,9 @@ export default function BYBL() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(4)}
         >
           위시리스트
@@ -131,16 +131,16 @@ export default function BYBL() {
           </div>
         </header>
         {openIndexes[4] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={like} alt="like" width={0} height={0} />
             좋아요 기능을 통해 사용자가 마음에 든 상품을 저장하고 마이페이지에서 확인할 수 있습니다.
           </div>
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(5)}
         >
           장바구니
@@ -152,7 +152,7 @@ export default function BYBL() {
           </div>
         </header>
         {openIndexes[5] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={cart} alt="cart" width={0} height={0} />
             비회원일 경우, sessionStorage에 장바구니를 저장하도록 설계하여 로그인을 하지 않았을 때에도 장바구니에 상품을
             담을 수 있습니다.
@@ -170,9 +170,9 @@ export default function BYBL() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(6)}
         >
           상품 주문 및 주문 내역
@@ -184,7 +184,7 @@ export default function BYBL() {
           </div>
         </header>
         {openIndexes[6] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={order} alt="order" width={0} height={0} />
             React Hook Form을 이용하여 주문 Form을 구현하였고 다음 우편번호 API를 통해 주소지를 간편하게 찾을 수 있도록
             하였습니다. <br />
@@ -199,9 +199,9 @@ export default function BYBL() {
         )}
       </li>
 
-      <li className="max-w-[400px] md:max-w-[600px]">
+      <li className="max-w-[370px] md:maw-w-[750px] lg:max-w-[600px]">
         <header
-          className="w-[400px] md:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
+          className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(7)}
         >
           상품 검색 및 자동완성
@@ -213,7 +213,7 @@ export default function BYBL() {
           </div>
         </header>
         {openIndexes[7] && (
-          <div className="w-[400px] md:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+          <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             <Image className="max-w-[380px] md:max-w-[600px]" src={search} alt="search" width={0} height={0} />
             React Select 라이브러리를 통해 검색 input을 구현하였고, 입력 값을 포함하는 검색 단어를 반환하도록
             하였습니다.
