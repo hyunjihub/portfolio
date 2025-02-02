@@ -14,6 +14,7 @@ import github from '/public/link/github.svg';
 import html from '/public/project/tech/html.svg';
 import java from '/public/project/tech/java.svg';
 import javascript from '/public/project/tech/js.svg';
+import jest from '/public/project/tech/jest.svg';
 import nextjs from '/public/project/tech/nextjs.svg';
 import notion from '/public/link/notion.svg';
 import oliveyoung from '/public/project/oliveyoung.png';
@@ -23,6 +24,7 @@ import react from '/public/project/tech/react.svg';
 import reacthookform from '/public/project/tech/reacthookform.svg';
 import recoil from '/public/project/tech/recoil.svg';
 import redux from '/public/project/tech/redux.svg';
+import route53 from '/public/project/tech/route53.svg';
 import router from '/public/project/tech/router.svg';
 import s3 from '/public/project/tech/s3.svg';
 import shop from '/public/project/shop.png';
@@ -75,4 +77,6 @@ export const TECH_STACK = {
   cloudfront: cloudfront,
   css: css,
   html: html,
+  jest: jest,
+  route53: route53,
 };

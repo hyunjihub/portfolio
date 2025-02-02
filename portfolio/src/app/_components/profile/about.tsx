@@ -8,7 +8,7 @@ import school from '/public/profile/school.svg';
 
 export default function About() {
   return (
-    <section className="max-w-screen-lg mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10 lg:gap-6">
+    <section className="max-w-screen-lg mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10 lg:gap-x-32">
       <div className="flex gap-4">
         <Image src={person} alt="person" width={30} height={30} />
         <div className="text-sm">
@@ -34,7 +34,7 @@ export default function About() {
         <Image src={school} alt="university" width={30} height={30} />
         <div className="text-sm">
           <p className="font-bold">학력</p>
-          <p className="text-darkgray">강원대학교 정보통신공학전공 (25. 02 졸업)</p>
+          <p className="text-darkgray">강원대학교 정보통신공학전공</p>
         </div>
       </div>
       <div className="flex gap-4">
