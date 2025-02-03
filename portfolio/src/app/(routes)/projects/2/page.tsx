@@ -8,12 +8,12 @@ import arrow from '/public/link/arrow.svg';
 export default function BomnaeDetail() {
   return (
     <main className="min-h-screen flex flex-col justify-center items-center">
-      <h2 className="mt-24 text-4xl text-primary font-black">봄내음 (Bomnae-mmm)</h2>
+      <h2 className="mt-24 text-3xl md:text-4xl text-primary font-black">봄내음 (Bomnae-mmm)</h2>
       <p className="mt-2 text-center px-3 text-xs md:text-sm">
         봄내음은 춘천을 의미하는 ‘봄내’와 맛있는 음식을 먹을 때 자주 사용하는 감탄사 ‘음~’을 합친 이름으로
         <br /> 춘천의 맛집, 카페, 놀거리 정보를 제공해주는 웹 사이트입니다.
       </p>
-      <div className="flex gap-5">
+      <div className="flex gap-2 md:gap-5">
         <Link
           className="px-2 py-1 border border-darkgray text-xs md:text-sm mt-6 flex gap-2 hover:underline"
           href={'https://bomnae-mmm.web.app/'}

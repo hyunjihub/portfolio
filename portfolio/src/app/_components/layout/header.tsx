@@ -14,17 +14,23 @@ export default function Header() {
 
       <ul className="w-56 md:w-80 flex justify-between text-darkgray text-base md:text-lg">
         <li>
-          <Link href={'/'} className={`${path === '/' ? 'text-primary' : ''} hover:font-semibold`}>
+          <Link href={'/'} className={`${path === '/' ? 'text-primary' : ''} hover:font-semibold hover:text-primary`}>
             ABOUT
           </Link>
         </li>
         <li>
-          <Link href={'/skills'} className={`${path.includes('skills') ? 'text-primary' : ''} hover:font-semibold`}>
+          <Link
+            href={'/skills'}
+            className={`${path.includes('skills') ? 'text-primary' : ''} hover:font-semibold hover:text-primary`}
+          >
             SKILLS
           </Link>
         </li>
         <li>
-          <Link href={'/projects'} className={`${path.includes('projects') ? 'text-primary' : ''} hover:font-semibold`}>
+          <Link
+            href={'/projects'}
+            className={`${path.includes('projects') ? 'text-primary' : ''} hover:font-semibold hover:text-primary`}
+          >
             PROJECTS
           </Link>
         </li>

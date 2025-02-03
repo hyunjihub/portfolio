@@ -7,7 +7,7 @@ import arrow from '/public/link/arrow.svg';
 export default function BYBLDetail() {
   return (
     <main className="min-h-screen flex flex-col justify-center items-center">
-      <h2 className="mt-24 text-4xl text-primary font-black">REACT_SHOP</h2>
+      <h2 className="mt-24 text-3xl md:text-4xl text-primary font-black">REACT_SHOP</h2>
       <p className="mt-2 text-center px-3 text-xs md:text-sm">
         소품샵 통합 온라인 스토어는 여러 소품샵의 상품을 하나의 플랫폼에서 보여주고, 소비자들이 간편하게 다양한 소품을
         구매할 수 있도록 돕는 웹 서비스.

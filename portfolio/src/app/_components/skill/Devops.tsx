@@ -1,12 +1,23 @@
+'use client';
+
 import Image from 'next/image';
+import ProjectModal from './ProjectModal';
 import { Skill } from '@/app/data/types';
 import { TECH_STACK } from '@/app/data/constant';
+import { useState } from 'react';
 
 interface DevopsProps {
   tech: Skill[];
 }
 
 export default function Devops({ tech }: DevopsProps) {
+  const [selectedItem, setSelectedItem] = useState<Skill | null>(null);
+
+  const handleClick = (index: number) => {
+    if (!selectedItem) setSelectedItem(tech[index]);
+    else setSelectedItem(null);
+  };
+
   return (
     <article className="p-5 rounded-lg border border-darkgray">
       <h3 className="text-2xl font-bold">DevOps</h3>
@@ -21,9 +32,12 @@ export default function Devops({ tech }: DevopsProps) {
             width={40}
             height={40}
             title={item.name}
+            onClick={() => handleClick(index)}
           />
         ))}
       </div>
+
+      {selectedItem && <ProjectModal tech={selectedItem} onClose={() => setSelectedItem(null)} />}
     </article>
   );
 }

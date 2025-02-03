@@ -7,7 +7,7 @@ import arrow from '/public/link/arrow.svg';
 export default function OliveYoungDetail() {
   return (
     <main className="min-h-screen flex flex-col justify-center items-center">
-      <h2 className="mt-24 text-4xl text-primary font-black">올리브영 클론코딩</h2>
+      <h2 className="mt-24 text-3xl md:text-4xl text-primary font-black">올리브영 클론코딩</h2>
       <p className="mt-2 text-center px-3 text-xs md:text-sm">
         올리브영 클론코딩 프로젝트는 인기 있는 드러그 스토어인 올리브영의 UI을 모방하여 학습하고, 사용자 경험을 학습하는
         프로젝트입니다.

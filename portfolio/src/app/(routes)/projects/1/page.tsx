@@ -8,7 +8,7 @@ import menutree from '/public/project/brave/menutree.jpg';
 export default function BraveDetail() {
   return (
     <main className="min-h-screen flex flex-col justify-center items-center">
-      <h2 className="mt-24 text-4xl text-primary font-black">용감한 원정대</h2>
+      <h2 className="mt-24 text-3xl md:text-4xl text-primary font-black">용감한 원정대</h2>
       <p className="mt-2 text-center px-3 text-xs md:text-sm">
         무서운 벌레를 대신 잡아줄 사람이 없을 때! 전화공포증이 심해 전화를 하기 겁날 때! 무서워서 환불하지 못하고 있을
         때!
@@ -30,7 +30,7 @@ export default function BraveDetail() {
       <p className="mt-6 font-bold text-primary">프로젝트 유형</p>
       <p className="mt-2 text-sm text-darkgray">팀프로젝트 (Backend 3명, Frontend 2명)</p>
       <p className="mt-6 font-bold text-primary">기술 스택 및 사용 환경</p>
-      <div className="mt-2 flex gap-2">
+      <div className="mt-2 flex gap-2 ">
         {['react', 'javascript', 'styled', 'redux', 'reactrouter', 'axios', 'postman', 'notion', 'slack'].map(
           (tech, key) => {
             return (

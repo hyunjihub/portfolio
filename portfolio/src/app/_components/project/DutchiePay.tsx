@@ -24,7 +24,7 @@ export default function DutchiePay() {
           className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(0)}
         >
-          이메일 로그인 및 소셜 로그인 (카카오, 네이버)
+          이메일 로그인 및 소셜 로그인
           <div className="flex gap-10 items-center">
             <div className="hidden md:flex gap-3">
               <Link
@@ -63,7 +63,7 @@ export default function DutchiePay() {
           className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(1)}
         >
-          자동 로그인 및 탭 간 sessionStorage 공유
+          자동 로그인 및 유저 정보 관리
           <div className="flex justify-center items-center gap-10 text-base md:text-lg font-semibold">
             <div className="flex gap-10 items-center">
               <div className="hidden md:flex gap-3">
@@ -270,7 +270,7 @@ export default function DutchiePay() {
           className="w-[360px] md:w-[740px] lg:w-[800px] flex justify-between items-center gap-10 text-base md:text-lg font-semibold border px-6 py-3"
           onClick={() => handleToggle(6)}
         >
-          상품 주문 및 결제 (카카오페이, 신용카드)
+          상품 주문 및 결제
           <div className="flex justify-center items-center gap-10 text-base md:text-lg font-semibold">
             <div className="flex gap-10 items-center">
               <div className="hidden md:flex gap-3">
