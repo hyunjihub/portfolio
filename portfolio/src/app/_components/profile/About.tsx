@@ -8,12 +8,19 @@ import call from '/public/profile/call.svg';
 import character from '/public/character.png';
 import location from '/public/profile/location.svg';
 import mail from '/public/profile/mail.svg';
+import { motion } from 'framer-motion';
 import person from '/public/profile/person.svg';
 import school from '/public/profile/school.svg';
 
 export default function About() {
   return (
-    <section className="max-w-screen-lg mt-16 flex gap-24">
+    <motion.section
+      className="max-w-screen-lg mt-16 flex gap-24"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <div className="flex flex-col justify-center">
         <Image className="object-cover" src={character} alt="character" width={370} height={330} />
         <div className="flex justify-between">
@@ -82,6 +89,6 @@ export default function About() {
           </div>
         </div>
       </article>
-    </section>
+    </motion.section>
   );
 }
