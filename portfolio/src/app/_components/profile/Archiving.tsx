@@ -7,7 +7,7 @@ import velog from '/public/link/velog.svg';
 
 export default function Archiving() {
   return (
-    <section className="max-w-screen-lg my-32 md:my-24 flex flex-col lg:flex-row items-center gap-10">
+    <section className="max-w-screen-lg my-24 flex flex-col lg:flex-row items-center gap-10">
       <Link href={'https://github.com/hyunjihub'} className="w-72" title="@hyunjihub 바로가기">
         <div className="flex">
           <Image src={github} alt="github" width={60} height={60} />
