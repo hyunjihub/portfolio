@@ -1,7 +1,10 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { Skill } from '@/app/data/types';
 import arrow from '/public/link/arrow.svg';
+import { motion } from 'framer-motion';
 import project from '@/app/data/project.json';
 
 interface ProjectModalProps {
@@ -18,9 +21,15 @@ export default function ProjectModal({ tech, onClose }: ProjectModalProps) {
 
   return (
     <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40" onClick={onClose}>
-      <article
+      <motion.article
         className="absolute top-[30%] left-[33%] bg-white w-[600px] p-[32px] rounded-lg border b-black m-0 m-auto z-50 flex flex-col items-center justify-center"
         onClick={handleClickArticle}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{
+          duration: 0.2,
+        }}
       >
         <h2 className="text-3xl font-bold">{tech.name} 사용 프로젝트</h2>
         <ul className="w-full my-10 flex flex-col gap-3">
@@ -47,7 +56,7 @@ export default function ProjectModal({ tech, onClose }: ProjectModalProps) {
         <button className="text-white text-sm bg-blue-500 rounded-lg px-16 py-2" onClick={onClose}>
           닫기
         </button>
-      </article>
+      </motion.article>
     </div>
   );
 }

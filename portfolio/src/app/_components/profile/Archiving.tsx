@@ -1,13 +1,22 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import arrow from '/public/link/arrow.svg';
 import github from '/public/link/github.svg';
+import { motion } from 'framer-motion';
 import notion from '/public/link/notion.svg';
 import velog from '/public/link/velog.svg';
 
 export default function Archiving() {
   return (
-    <section className="max-w-screen-lg my-24 flex flex-col lg:flex-row items-center gap-10">
+    <motion.section
+      className="max-w-screen-lg my-24 flex flex-col lg:flex-row items-center gap-10"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true, amount: 0.2 }}
+    >
       <Link href={'https://github.com/hyunjihub'} className="w-72" title="@hyunjihub 바로가기">
         <div className="flex">
           <Image src={github} alt="github" width={60} height={60} />
@@ -56,6 +65,6 @@ export default function Archiving() {
         </div>
         <p className="mt-2 text-xs text-darkgray">: CS 스터디 내용을 기록하고 있습니다.</p>
       </Link>
-    </section>
+    </motion.section>
   );
 }

@@ -24,22 +24,26 @@ export default function About() {
       <div className="flex flex-col justify-center">
         <Image className="object-cover" src={character} alt="character" width={370} height={330} />
         <div className="flex justify-between">
-          <Link
+          <motion.a
             className="min-w-[180px] text-sm px-5 py-2 rounded bg-primary text-white flex justify-between items-center hover:underline"
             href={'https://drive.google.com/file/d/12SVZoOTvSHXHptF6ts6PUjxb6ze9zZlz/view?usp=sharing'}
             role="button"
+            initial={{ scale: 1 }}
+            whileTap={{ scale: 0.9 }}
           >
             이력서
             <Arrow color={'#ffffff'} />
-          </Link>
-          <Link
+          </motion.a>
+          <motion.a
             className="min-w-[180px] text-sm px-5 py-2 rounded bg-primary text-white flex justify-between items-center hover:underline"
             href={'/skills'}
             role="button"
+            initial={{ scale: 1 }}
+            whileTap={{ scale: 0.9 }}
           >
             보유 기술스택
             <Arrow color={'#ffffff'} />
-          </Link>
+          </motion.a>
         </div>
       </div>
 
