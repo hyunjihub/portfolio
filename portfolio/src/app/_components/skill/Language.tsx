@@ -21,7 +21,7 @@ export default function Language({ tech }: LanguageProps) {
   };
 
   return (
-    <article className="p-5 rounded-lg border border-darkgray">
+    <article className="p-5 rounded-lg border shadow-xs">
       <h3 className="text-2xl font-bold">Language</h3>
 
       <div className="mt-5 flex gap-5">

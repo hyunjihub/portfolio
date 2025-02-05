@@ -19,7 +19,7 @@ export default function Backend({ tech }: BackProps) {
   };
 
   return (
-    <article className="min-h-[194px] p-5 rounded-lg border border-darkgray">
+    <article className="min-h-[194px] p-5 rounded-lg border shadow-xs">
       <h3 className="text-2xl font-bold">Backend</h3>
 
       <div className="mt-5 flex gap-5 grid grid-cols-3">

@@ -14,6 +14,27 @@ export default {
         darkgray: '#3D3B40',
         primary: '#5CB8E4',
       },
+      keyframes: {
+        infiniteSlideOriginal: {
+          '0%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(-100%)' },
+          '50.1%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        infiniteSlideCopy: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-200%)' },
+        },
+        infiniteSlide: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
+      animation: {
+        infiniteSlideOriginal: 'infiniteSlideOriginal 20s linear infinite',
+        infiniteSlideCopy: 'infiniteSlideCopy 20s linear infinite',
+        infiniteSlide: 'infiniteSlide 20s linear infinite',
+      },
     },
   },
   plugins: [],

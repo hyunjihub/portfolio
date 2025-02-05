@@ -20,6 +20,14 @@ body {
   font-family: Pretendard;
 }
 
+.group:hover .animate-infiniteSlide {
+  animation-play-state: paused;
+}
+
+.group:hover .animate-afterInfiniteSlide {
+  animation-play-state: paused;
+}
+
 @font-face {
   font-family: 'Pretendard';
   font-weight: 900;

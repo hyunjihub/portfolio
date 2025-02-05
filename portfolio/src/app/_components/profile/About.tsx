@@ -22,7 +22,10 @@ export default function About() {
       viewport={{ once: true, amount: 0.2 }}
     >
       <div className="flex flex-col justify-center">
-        <Image className="object-cover" src={character} alt="character" width={370} height={330} />
+        <div className="relative w-[400px] h-[400px]">
+          <Image className="object-cover" src={character} alt="character" fill />
+        </div>
+
         <div className="flex justify-between">
           <motion.a
             className="min-w-[180px] text-sm px-5 py-2 rounded bg-primary text-white flex justify-between items-center hover:underline"
