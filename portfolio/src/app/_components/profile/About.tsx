@@ -29,7 +29,7 @@ export default function About() {
         <div className="flex justify-between">
           <motion.a
             className="min-w-[180px] text-sm px-5 py-2 rounded bg-primary text-white flex justify-between items-center hover:underline"
-            href={'https://drive.google.com/file/d/12SVZoOTvSHXHptF6ts6PUjxb6ze9zZlz/view?usp=sharing'}
+            href={'https://drive.google.com/file/d/1cuJNvXTkWg7Buhz0zhef2pHEyMSFD5wE/view?usp=sharing'}
             role="button"
             initial={{ scale: 1 }}
             whileTap={{ scale: 0.9 }}

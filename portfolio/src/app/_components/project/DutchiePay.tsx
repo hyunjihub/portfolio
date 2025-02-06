@@ -81,6 +81,13 @@ export default function DutchiePay() {
                 >
                   <Image src={velog} alt="velog" width={20} height={20} />
                 </Link>
+                <Link
+                  href={
+                    'https://velog.io/@syub98774/%EC%84%9C%EB%A1%9C-%EB%8B%A4%EB%A5%B8-%EB%8F%84%EB%A9%94%EC%9D%B8%EC%97%90%EC%84%9C%EB%8F%84-%EC%BF%A0%ED%82%A4%EB%A5%BC-%EA%B3%B5%EC%9C%A0%ED%95%A0-%EC%88%98-%EC%9E%88%EB%8F%84%EB%A1%9D-%EC%84%A4%EC%A0%95%ED%95%B4%EB%B3%B4%EC%9E%90'
+                  }
+                >
+                  <Image src={velog} alt="velog" width={20} height={20} />
+                </Link>
               </div>
             </div>
             <Image className={`${openIndexes[1] ? '' : 'rotate-180'}`} src={more} alt="more" width={20} height={20} />
@@ -455,6 +462,9 @@ export default function DutchiePay() {
                     'https://velog.io/@syub98774/React-Quill%EB%A1%9C-%EC%9E%85%EB%A0%A5%ED%95%9C-%EB%82%B4%EC%9A%A9%EC%9D%84-%EC%95%88%EC%A0%84%ED%95%98%EA%B2%8C-%EC%B6%9C%EB%A0%A5%ED%95%B4%EB%B3%B4%EC%9E%90'
                   }
                 >
+                  <Image src={velog} alt="velog" width={20} height={20} />
+                </Link>
+                <Link href={'https://velog.io/@syub98774/tailwindcsstypography'}>
                   <Image src={velog} alt="velog" width={20} height={20} />
                 </Link>
               </div>

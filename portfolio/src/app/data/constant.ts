@@ -5,7 +5,7 @@ import bybl from '/public/project/bybl.png';
 import c from '/public/project/tech/c.svg';
 import cloudfront from '/public/project/tech/cloudfront.svg';
 import css from '/public/project/tech/css.svg';
-import dutchie from '/public/project/dutchie.png';
+import dutchie from '/public/project/dutchie.jpg';
 import eslint from '/public/project/tech/eslint.svg';
 import express from '/public/project/tech/express.svg';
 import figma from '/public/project/tech/figma.svg';

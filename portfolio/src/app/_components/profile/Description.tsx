@@ -16,7 +16,7 @@ export default function Description() {
         프론트엔드의 매력은 사용자와 만나는 접점을 설계하는 데 있다고 믿으며, 더욱 편리하고 직관적인 UI/UX를 구현하기
         위해 끊임없이 고민합니다.
       </p>
-      <p className="text-sm text-gray-300">Updated. 2024.10.12</p>
+      <p className="text-sm text-gray-300">Updated. 2025.02.05</p>
     </motion.div>
   );
 }
