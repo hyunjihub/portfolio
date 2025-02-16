@@ -41,13 +41,21 @@ export default function DutchiePay() {
               >
                 <Image src={velog} alt="velog" width={20} height={20} />
               </Link>
+              <Link
+                href={
+                  'https://velog.io/@syub98774/%EB%A1%9C%EA%B7%B8%EC%9D%B8-%ED%9B%84-%ED%95%AD%EC%83%81-%EB%A9%94%EC%9D%B8%EC%9C%BC%EB%A1%9C-%EA%B0%88-%ED%95%84%EC%9A%94%EB%8A%94-%EC%97%86%EC%9C%BC%EB%8B%88-redirect%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%9E%90'
+                }
+              >
+                <Image src={velog} alt="velog" width={20} height={20} />
+              </Link>
             </div>
             <Image className={`${openIndexes[0] ? '' : 'rotate-180'}`} src={more} alt="more" width={20} height={20} />
           </div>
         </header>
         {openIndexes[0] && (
           <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
-            이메일과 소셜 로그인 시 유저 정보를 redux에 저장하여 상태를 전역적으로 관리하도록 구현했습니다.
+            이메일과 소셜 로그인 시 유저 정보를 redux에 저장하여 상태를 전역적으로 관리하도록 구현했습니다. 로그인 성공
+            후 redirect query를 통해 이전 페이지로 이동하여 사용자 경험을 향상시켰습니다.
             <br />
             loginType을 LocalStorage에 저장하여 최근 로그인 방식을 표시해 사용자가 다시 방문했을 때도 로그인 방식을
             기억할 수 있어 사용자 경험을 향상시켰습니다.

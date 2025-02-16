@@ -15,7 +15,7 @@ import school from '/public/profile/school.svg';
 export default function About() {
   return (
     <motion.section
-      className="max-w-screen-lg mt-16 flex gap-24"
+      className="max-w-screen-lg lg:mt-24 flex flex-col md:flex-row gap-16 md:gap-24"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
@@ -26,7 +26,7 @@ export default function About() {
           <Image className="object-cover" src={character} alt="character" fill />
         </div>
 
-        <div className="flex justify-between">
+        <div className="px-3 md:px-0 flex justify-between">
           <motion.a
             className="min-w-[180px] text-sm px-5 py-2 rounded bg-primary text-white flex justify-between items-center hover:underline"
             href={'https://drive.google.com/file/d/1cuJNvXTkWg7Buhz0zhef2pHEyMSFD5wE/view?usp=sharing'}
@@ -50,7 +50,7 @@ export default function About() {
         </div>
       </div>
 
-      <article className="grid grid-cols-1 gap-1">
+      <article className="w-full flex flex-col pl-24 md:pl-0 gap-5 md:gap-9">
         <div className="flex gap-4 items-center">
           <Image src={person} alt="person" width={30} height={30} />
           <div className="text-sm flex flex-col">

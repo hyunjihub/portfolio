@@ -14,11 +14,11 @@ const keywordVariants = [
 
 export default function Keyword() {
   return (
-    <div className="mt-32 md:mt-24 flex gap-3">
+    <div className="mt-32 md:mt-24 flex gap-1 md:gap-3">
       {keywords.map((text, index) => (
         <motion.p
           key={index}
-          className={`px-3 py-1 border border-primary rounded-2xl text-sm ${
+          className={`px-2 md:px-3 py-1 border border-primary rounded-2xl text-xs md:text-sm ${
             index % 2 === 0 ? 'bg-primary text-white' : 'text-primary'
           }`}
           initial={{ y: keywordVariants[index].y[0], opacity: 0 }}

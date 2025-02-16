@@ -10,7 +10,7 @@ export default function Title() {
       animate={{ letterSpacing: '0em', opacity: 1 }}
       transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1.0] }}
     >
-      안녕하세요. 프론트엔드 개발자 <strong className="text-primary font-black">장현지</strong>입니다.
+      프론트엔드 개발자 <strong className="text-primary font-black">장현지</strong>입니다.
     </motion.h2>
   );
 }
