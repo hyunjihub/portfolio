@@ -10,6 +10,7 @@ import eslint from '/public/project/tech/eslint.svg';
 import express from '/public/project/tech/express.svg';
 import figma from '/public/project/tech/figma.svg';
 import firebase from '/public/project/tech/firebase.svg';
+import framermotion from '/public/project/tech/framermotion.svg';
 import github from '/public/link/github.svg';
 import html from '/public/project/tech/html.svg';
 import java from '/public/project/tech/java.svg';
@@ -79,4 +80,5 @@ export const TECH_STACK = {
   html: html,
   jest: jest,
   route53: route53,
+  framermotion: framermotion,
 };

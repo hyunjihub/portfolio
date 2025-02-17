@@ -22,7 +22,7 @@ export default function ProjectModal({ tech, onClose }: ProjectModalProps) {
   return (
     <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-40" onClick={onClose}>
       <motion.article
-        className="absolute top-[30%] left-[33%] bg-white w-[600px] p-[32px] rounded-lg border b-black m-0 m-auto z-50 flex flex-col items-center justify-center"
+        className="absolute top-[30%] left-[4%] md:left-[33%] bg-white w-[360px] md:w-[600px] p-[32px] rounded-lg border b-black m-0 m-auto z-50 flex flex-col items-center justify-center"
         onClick={handleClickArticle}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -31,7 +31,7 @@ export default function ProjectModal({ tech, onClose }: ProjectModalProps) {
           duration: 0.2,
         }}
       >
-        <h2 className="text-3xl font-bold">{tech.name} 사용 프로젝트</h2>
+        <h2 className="text-2xl md:text-3xl font-bold">{tech.name} 프로젝트</h2>
         <ul className="w-full my-10 flex flex-col gap-3">
           {selectedProject.length === 0 ? (
             <p className="text-gray-400 text-center">해당 언어로 사용한 프로젝트가 존재하지 않습니다.</p>

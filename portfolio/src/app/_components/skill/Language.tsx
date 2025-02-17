@@ -21,11 +21,11 @@ export default function Language({ tech }: LanguageProps) {
   };
 
   return (
-    <article className="p-5 rounded-lg border shadow-xs">
+    <article className="w-full p-5 rounded-lg border shadow-xs">
       <h3 className="text-2xl font-bold">Language</h3>
 
       <div className="mt-5 flex gap-5">
-        <p className="leading-tight">
+        <p className="min-w-[30px] leading-tight">
           주로
           <br />
           사용
@@ -47,7 +47,7 @@ export default function Language({ tech }: LanguageProps) {
       </div>
 
       <div className="flex gap-5 mt-5">
-        <p className="leading-tight">
+        <p className="min-w-[30px] leading-tight">
           경험
           <br />
           있음

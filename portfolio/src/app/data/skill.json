@@ -161,6 +161,12 @@
       "name": "storybook",
       "projects": [6],
       "isCommon": false
+    },
+    {
+      "skillId": 26,
+      "name": "framermotion",
+      "projects": [],
+      "isCommon": false
     }
   ]
 }

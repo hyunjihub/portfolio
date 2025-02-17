@@ -13,7 +13,6 @@ export default function Home() {
       <Description />
       <About />
       <Archiving />
-      <h3 className="text-3xl text-primary font-black my-8">구현 프로젝트</h3>
       <ProjectSlide />
     </main>
   );
