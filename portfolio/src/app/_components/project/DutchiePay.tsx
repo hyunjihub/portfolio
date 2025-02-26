@@ -283,6 +283,7 @@ export default function DutchiePay() {
             사용자가 원하는 상품을 더 쉽게 제공할 수 있도록 설계했습니다. <br />
             별점과 리뷰 개수와 함께 공동구매 진행률과 남은 기간을 표시하여 상품에 대한 정보들을 상세페이지 접근 없이도
             확인할 수 있도록 UI를 구현했습니다.
+            <Image className="max-w-[380px] md:max-w-[600px]" src={product} alt="product" width={0} height={0} />
             <br />
             상품 수량을 +/- 버튼을 통해 수량을 쉽게 설정할 수 있도록 하였으며, 변경된 수량에 따라 가격을 실시간으로
             변경하여 구매 가격을 쉽게 파악할 수 있도록 하였습니다.
