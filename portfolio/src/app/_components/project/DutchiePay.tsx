@@ -2,7 +2,17 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import address from '/public/project/dutchie/address.gif';
+import image from '/public/project/dutchie/image.gif';
+import landing from '/public/project/dutchie/landing.gif';
+import login from '/public/project/dutchie/login.gif';
 import more from '/public/project/more.svg';
+import order from '/public/project/dutchie/order.gif';
+import orderlist from '/public/project/dutchie/orderlist.gif';
+import post from '/public/project/dutchie/post.gif';
+import product from '/public/project/dutchie/product.gif';
+import productlist from '/public/project/dutchie/productlist.gif';
+import search from '/public/project/dutchie/search.gif';
 import { useState } from 'react';
 import velog from '/public/link/velog.svg';
 
@@ -54,6 +64,7 @@ export default function DutchiePay() {
         </header>
         {openIndexes[0] && (
           <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+            <Image className="max-w-[380px] md:max-w-[600px]" src={login} alt="login" width={0} height={0} />
             이메일과 소셜 로그인 시 유저 정보를 redux에 저장하여 상태를 전역적으로 관리하도록 구현했습니다. 로그인 성공
             후 redirect query를 통해 이전 페이지로 이동하여 사용자 경험을 향상시켰습니다.
             <br />
@@ -189,6 +200,7 @@ export default function DutchiePay() {
         </header>
         {openIndexes[3] && (
           <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+            <Image className="max-w-[380px] md:max-w-[600px]" src={address} alt="address" width={0} height={0} />
             배송지를 최대 5개까지 저장할 수 있으며, 최초로 설정한 배송지를 기본 배송지로 설정하도록 구현했습니다. <br />
             배송지가 2개 이상 될 경우, 기본 배송지를 변경할 수 있으며 주문 시 배송지 정보에 기본 배송지를 default로
             set되도록 설계하였습니다.
@@ -227,6 +239,7 @@ export default function DutchiePay() {
         </header>
         {openIndexes[4] && (
           <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+            <Image className="max-w-[380px] md:max-w-[600px]" src={image} alt="image" width={0} height={0} />
             Presigned URL을 이용하여 이미지를 안전하게 S3에 업로드하도록 구현했습니다. <br />
             base64 형식으로 삽입된 이미지를 File 객체로 변환하여 S3에 업로드할 수 있도록 하였습니다.
           </div>
@@ -259,6 +272,13 @@ export default function DutchiePay() {
         </header>
         {openIndexes[5] && (
           <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+            <Image
+              className="max-w-[380px] md:max-w-[600px]"
+              src={productlist}
+              alt="productlist"
+              width={0}
+              height={0}
+            />
             무한스크롤을 이용하여 상품 리스트 페이지를 구현하였으며, 카테고리, 필터링 및 마감 상품 포함 기능을 추가하여
             사용자가 원하는 상품을 더 쉽게 제공할 수 있도록 설계했습니다. <br />
             별점과 리뷰 개수와 함께 공동구매 진행률과 남은 기간을 표시하여 상품에 대한 정보들을 상세페이지 접근 없이도
@@ -324,6 +344,7 @@ export default function DutchiePay() {
         </header>
         {openIndexes[6] && (
           <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+            <Image className="max-w-[380px] md:max-w-[600px]" src={order} alt="order" width={0} height={0} />
             React Hook Form을 이용하여 주문 form을 구현했습니다. 사용자의 배송지 정보가 존재할 경우 기본 배송지를
             default로 설정하여 주문 정보를 편하게 작성할 수 있도록 설계하였습니다.
             <br />
@@ -356,6 +377,7 @@ export default function DutchiePay() {
         </header>
         {openIndexes[7] && (
           <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+            <Image className="max-w-[380px] md:max-w-[600px]" src={orderlist} alt="orderlist" width={0} height={0} />
             주문 상태에 따라 주문 내역을 Load More 방식으로 렌더링하였습니다.
             <br />
             주문 상태에 맞춰 후기, 문의, 구매 취소 등의 버튼을 표시하도록 조건부 렌더링을 구현했습니다.
@@ -437,6 +459,7 @@ export default function DutchiePay() {
         </header>
         {openIndexes[10] && (
           <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+            <Image className="max-w-[380px] md:max-w-[600px]" src={search} alt="search" width={0} height={0} />
             검색창에 focus 할 경우, 최근 검색어 목록을 표시하며 키보드와 마우스를 이용하여 원하는 검색어를 선택할 수
             있습니다.
             <br />
@@ -482,6 +505,7 @@ export default function DutchiePay() {
         </header>
         {openIndexes[11] && (
           <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+            <Image className="max-w-[380px] md:max-w-[600px]" src={post} alt="post" width={0} height={0} />
             React Quill을 이용하여 글자 스타일링(볼드, 이탤릭, 밑줄), 리스트, 링크, 이미지 삽입 등 다양한 서식을
             포함하여 게시글을 작성할 수 있도록 했습니다.
             <br />
@@ -532,6 +556,7 @@ export default function DutchiePay() {
         </header>
         {openIndexes[13] && (
           <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
+            <Image className="max-w-[380px] md:max-w-[600px]" src={landing} alt="landing" width={0} height={0} />
             React-slick을 이용하여 메인 Carosel과 상품 Carousel을 구현했습니다. <br />
           </div>
         )}
