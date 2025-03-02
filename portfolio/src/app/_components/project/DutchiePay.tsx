@@ -529,7 +529,15 @@ export default function DutchiePay() {
           지역 게시글 위치 정보
           <div className="flex justify-center items-center gap-10 text-base md:text-lg font-semibold">
             <div className="flex gap-10 items-center">
-              <div className="hidden md:flex gap-3"></div>
+              <div className="hidden md:flex gap-3">
+                <Link
+                  href={
+                    'https://velog.io/@syub98774/NEXTPUBLIC%EC%9C%BC%EB%A1%9C-%EC%A0%88%EB%8C%80-%EC%99%B8%EB%B6%80-api-key%EB%82%98-api-secret%EC%9D%84-%EC%A0%95%EC%9D%98%ED%95%98%EB%A9%B4-%EC%95%88-%EB%90%9C%EB%8B%A4.-Route-Handlers%EB%A5%BC-%ED%86%B5%ED%95%B4-%EC%99%B8%EB%B6%80-API-%ED%98%B8%EC%B6%9C%ED%95%98%EA%B8%B0'
+                  }
+                >
+                  <Image src={velog} alt="velog" width={20} height={20} />
+                </Link>
+              </div>
             </div>
             <Image className={`${openIndexes[12] ? '' : 'rotate-180'}`} src={more} alt="more" width={20} height={20} />
           </div>
@@ -538,6 +546,8 @@ export default function DutchiePay() {
           <div className="w-[360px] md:w-[740px] lg:w-[800px] py-2 px-5 md:px-10 bg-gray-100 border flex flex-col items-center justify-center text-sm">
             지역 게시글 작성 시 네이버 지도 MAP과 geolocation을 이용하여 사용자의 위치를 표시하고 마커를 이동시켜 거래
             위치를 설정할 수 있도록 설계했습니다.
+            <br />
+            외부 API 호출 시 Route Handler를 이용하여 안전하게 API를 호출시키도록 구현했습니다.
           </div>
         )}
       </li>
